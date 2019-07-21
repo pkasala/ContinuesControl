@@ -1,6 +1,6 @@
 # Continues Control - Moving Arm
 ### Introduction
-This project, describes the reinforcement learning for resolve the continues control problem. 
+This project, describes the reinforcement learning to resolve the continues control problem. 
 The problem is describe with continues state space and continues action space.
 The goal is to hold the ball with moving arm :) 
 I used TD3 algorithm which is extension of Deep Deterministic Gradient Policy method. I include my private extension of local exploration. more details in Report.pdf and https://arxiv.org/pdf/1802.09477.pdf
