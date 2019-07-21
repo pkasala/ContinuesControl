@@ -14,7 +14,7 @@ Clone the repository, install the Unity Enviroment and start with ExperienceMana
 **You can see trained agent in action [here](https://www.youtube.com/watch?v=kldATbEf1zE)**
 
 A reward of +0.1 is provided for holding the ball at each step. The maximum reward is 40 points.   
-The state space has 33 dimensions and contains the position, rotation, velocity, and angular velocities of the arm. Given this information, the agent has to learn how to best select actions. 
+The state space has 33 dimensions and contains the position, rotation, velocity, and angular velocities of the arm. 
 The action has 4 dimension in range -1 to 1. And describe the tourge to each part of arm.
 
 The task is episodic, and in order to solve the environment, your agent must get an average *score of +30 over 100* consecutive episodes.
