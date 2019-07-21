@@ -23,14 +23,13 @@ The task is episodic, and in order to solve the environment, your agent must get
 The project in writen in python and using the pytorch framework for Deep Neural network. More requirements read bellow.
 The project files are following:
 - ExperienceManager.py - the main file.  Responsible for run the experience, run episode, interact with agent and store statistic of episode reward 
-
 - Agent.py - responsible for choosing action in particular state, interact with memory, and learning process             
-- PriorityMemory.py - class is reponsible for storing data in SumTree data structure, and sampling  data from it
-- SumTree.py - data structure defined for storing experiences in ordered tree. The branch is the value of sum of priorities under this branch. And the leaf is experience. Search over tree is than based on priority value.
-- Model.py - define the Neural network model in Pytorch
-
-
-- model.pth - the learned neural network model
+- Memory.py - class is reponsible for storing data in array data structure, and randomly sampling data from it
+- NeuralNetwork.py - define the Neural network model in Pytorch, For both Actor and Critic NN. Critic class contains definition of two NN as describe in TD3 algorithm.
+- EnvironmentWrapper.py -  responsible for creating and interaction with Unity env. 
+- Util.py - miscellaneous functions like, prepare model file name, store graph
+- actor.pth - the learned neural network model, for interacting actions
+- critic.pth - the learned neural network model provides the Q-Value function
 - Report.pdf - describe the work process and some hyper parameter testing
 
 ### Installation requirement
@@ -41,13 +40,13 @@ The project was tested on 3.6 python and requires the following packages to be i
 - unityagent 0.4.0
 
 ### Unity Environment
-After success instalation please navigate to line num 25 in ExperienceManager.py and update the path to your installation directory
+After success instalation please navigate to line num 13 in ExperienceManager.py and update the path to your installation directory
 To try it yourself and see how wise you agent can be :), you'll need to download a new Unity environment.
 You need only select the environment that matches your operating system:
 
-* Linux: [download here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/VisualBanana_Linux.zip)
-* Mac OSX: [download here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/VisualBanana.app.zip)
-* Windows (32-bit): [download here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/VisualBanana_Windows_x86.zip)
-* Windows (64-bit): [download here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/VisualBanana_Windows_x86_64.zip)
+* Linux: [download here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Linux.zip)
+* Mac OSX: [download here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher.app.zip)
+* Windows (32-bit): [download here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Windows_x86.zip)
+* Windows (64-bit): [download here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Windows_x86_64.zip)
 
 
