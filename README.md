@@ -27,6 +27,7 @@ The project files are following:
 - Memory.py - class is reponsible for storing data in array data structure, and randomly sampling data from it
 - NeuralNetwork.py - define the Neural network model in Pytorch, For both Actor and Critic NN. Critic class contains definition of two NN as describe in TD3 algorithm.
 - EnvironmentWrapper.py -  responsible for creating and interaction with Unity env. 
+- Config.py - class hodl the all hyperparams and object required by agent
 - Util.py - miscellaneous functions like, prepare model file name, store graph
 - actor.pth - the learned neural network model, for interacting actions
 - critic.pth - the learned neural network model provides the Q-Value function
