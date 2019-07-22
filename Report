@@ -29,7 +29,9 @@ Steps:
 -Sixth - Than we can calculate the loss over prediction and requisted Q-Value target
 -Seventh - Apply backpropagation of local critic loss
 -Eighth - Than by gradient chain rule we can apply the result of local Critic model to Actor model.
-      This update the Actor weights into gradient direction of increasing the expected Q-Value. Applying the gradinet ascent.
+      This update the Actor weights into gradient direction of increasing the expected Q-Value. We have to applying the gradient ascent.
+- Nineth - Becasue we just update the local NNs, we need to either update the target NNs. 
+      So update all target NN. Actor Target NN, and both Critic target NN by applying the polyak update rules. 
 
         
 
