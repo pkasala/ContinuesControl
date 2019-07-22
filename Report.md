@@ -26,7 +26,7 @@ Steps:
     Taking minimum improves the stability, because the Q-Value is not over-estimated.
 4.  As we just calculate the Next Q-Value, we can than apply this as a requisted Q-Value target to local Critic NN. 
     Simply by applying eq: requisted Q-Value = Reward + DiscountFactor*MIN(Next Q-Value)
-5.  Get the prediciton of the two local Critic NN model from current state+current action
+5.  Get the prediciton of the two local Critic NN model for current state+current action
 6.  Than we can calculate the loss over prediction and requisted Q-Value target
 7.  Apply backpropagation of local critic loss
 8.  Than as suggested by author of TD3, we perform the update of actor model not every learning iteration, but in slower manner.
@@ -36,6 +36,7 @@ Steps:
     Update all target NN. Actor Target NN, and both Critic target NN by applying the polyak update rules. 
  
 The whole process is describe by this picture:
+
 
 
 
