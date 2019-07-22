@@ -37,7 +37,10 @@ Steps:
  
 The whole process is describe by this picture:
 
+@Copyright by Authors of course - Deep Reinforcement Learning 2.
 ![Model](https://github.com/pkasala/ContinuesControl/blob/master/model_explain.png)
+
+The information has been taken from https://arxiv.org/pdf/1802.09477.pdf and Course Deep Reinforcement Learning 2.0 https://www.udemy.com/deep-reinforcement-learning/
 
 
 
