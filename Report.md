@@ -1,8 +1,7 @@
 # Continues Control - Moving Arm - Agent Learning process
 ## Article goal
 The aim of this article is to describe how the agent learns. 
-This is actually additional information to Report.pdf
-The TD3 algorithm is based on Actor-Critic model.
+And describe the TD3 algorithm which is based on Actor-Critic model.
 
 ## High level description
 The full learning process is based on off-policy method. This means learning process is not directly on each action, but instead using some kind of experience memory.
