@@ -37,6 +37,7 @@ Steps:
  
 The whole process is describe by this picture:
 
+![Model](https://github.com/pkasala/ContinuesControl/blob/master/model_explain.png)
 
 
 
