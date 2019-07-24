@@ -34,6 +34,15 @@ TD3 algorithm extend the basic Actor-Critic and trying ot avoid the approximatio
 9.  Becasue we just update the local NNs, we need to either update the target NNs. 
     Update all target NN. Actor Target NN, and both Critic target NN by applying the polyak update rules. 
  
+### Neural Network description
+#### Actor Network
+ This network define the policy. Means the best action at current state. The actions are defined by continues space. This require the regresion activation at output level of Neural Newtork. The action space is defined from -1 to 1 value. This negative and positive space prefered the Tahn output activation function. 
+  The newtork is linear NN of 2 hidden layers with 400 and 300 neurons respectively. Layers are connected with RELU activation function.
+#### Critic Network
+  This network define the Q-Value function of any action taken in any states. The network model is similar to actor model. The diferent is on output layer activation function which is RELU function, because the reward is a continues positive value. 
+  
+
+
 The whole process is describe by this picture:
 
 ![Model](https://github.com/pkasala/ContinuesControl/blob/master/model_explain.png)
